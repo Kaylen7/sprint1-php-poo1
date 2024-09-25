@@ -12,7 +12,7 @@ if(file_exists(UTILS_LOCAL)){
 apartat(1);
 
 class PokerDice{
-    private array $faces = ["As", "K", "Q", "J", "7", "8"];
+    private static array $faces = ["As", "K", "Q", "J", "7", "8"];
     private static string $total = "";
     private string $result = "";
 
