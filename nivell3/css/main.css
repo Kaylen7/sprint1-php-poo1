@@ -19,6 +19,7 @@ section.cinemes {
 .cinemes-grid{
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-auto-rows: auto;
     gap: 10px;
     justify-content: center;
 }
@@ -27,7 +28,6 @@ section.cinemes {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     grid-column: 2/span 2;
     width: 80%;
     margin: 0 auto;

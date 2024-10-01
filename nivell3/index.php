@@ -37,7 +37,7 @@ if(isset($_POST['botoTornar'])){
             printMovies($cinemesObj, true, false);
         
             echo "<form class='search-form' action='index.php' method='POST'>" .
-                "<label for='cercarPelicula'>Quins cinemes tenen pelis de...</label>" .
+                "<label for='selectDireccio'>Quins cinemes tenen pelis de...</label>" .
                 createSelectDropdown(getAllDirectors($cartelera)) . 
                 "<button class='button' type='submit'>Envía</button>" .
                 "</form>";

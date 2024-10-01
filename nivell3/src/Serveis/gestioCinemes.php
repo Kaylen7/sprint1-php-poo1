@@ -1,4 +1,5 @@
 <?php
+
 include_once('./src/Pelicula.php');
 include_once('./src/Cinema.php');
 include_once('./src/Utils/generadors.php');
@@ -30,7 +31,7 @@ $cinemesObj['auditori']->addRandomMovies($movies, 1);
 function findCinema(array $cinemesObj, string $opcio, string $cerca): array{
     $foundCinemas = []; 
     foreach($cinemesObj as $cine){
-        if ($cine->findMovie($opcio, $cerca)){
+        if ($cine->findMovie($cerca)){
             $foundCinemas[count($foundCinemas)] = $cine;
         }
     }

@@ -1,5 +1,4 @@
 <?php
-
 function createSelectDropdown(array $llista){
     $htmlStr = "<select id='selectDireccio' name='cercarPelicula'>";
 
@@ -39,7 +38,7 @@ function printMovies(array $llistaCines, bool $showPeliMesLlarga, bool $markDire
             echo "</p>";
          }
          echo "</div>";
-         if ($showPeliMesLlarga){
+         if ($showPeliMesLlarga && count($cinema->frontData('pelis'))){
             $peliMesLlarga = $cinema->getLongestMovie();
          echo "<p>La peli més llarga que oferim és:<br/>" . $peliMesLlarga->frontData('nom') . "<br/>Durada: ". $peliMesLlarga->frontData('durada') . "<br/>Direcció: ".$peliMesLlarga->frontData('direccio') . "</p>";
          }

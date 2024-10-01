@@ -41,7 +41,7 @@ class Cinema {
         }
     }
 
-    public function findMovie(string $opcions, string $cerca): bool{
+    public function findMovie(string $cerca): bool{
         foreach($this->pelis as $peli){
             if(array_search($cerca, $peli->getData())){
                 return true;
